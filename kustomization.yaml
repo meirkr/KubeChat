@@ -1,0 +1,10 @@
+commonLabels:
+    app: kubechat
+  
+  resources:
+  - Ingress-nginx.yaml
+  - Ingress-route.yaml
+  - nginx-backend-deployment.yaml
+  - nginx-frontend-deployment.yaml
+  - service-backend
+  - service-frontend
