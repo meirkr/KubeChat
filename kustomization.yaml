@@ -6,5 +6,5 @@ commonLabels:
   - Ingress-route.yaml
   - nginx-backend-deployment.yaml
   - nginx-frontend-deployment.yaml
-  - service-backend
-  - service-frontend
+  - service-backend.yaml
+  - service-frontend.yaml
