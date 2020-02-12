@@ -2,19 +2,15 @@ apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
   name: ingress-chat
-  annotations:
-    # use the shared ingress-nginx
-    kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
-  - host: localhost
-    http:
+  - http:
       paths:
       - path: /
         backend:
-          serviceName: frontend
+          serviceName: frontend-deployment-frontend-80
           servicePort: 80
       - path: /chat
         backend:
-          serviceName: backend
+          serviceName: backend-deployment-backend-80
           servicePort: 80
