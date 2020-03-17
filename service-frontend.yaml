@@ -3,9 +3,9 @@ kind: Service
 metadata:
   name: frontend-svc
   labels:
-    app: frontend
+    app: frontend-app
 spec:
   ports:
   - port: 80
   selector:
-    app: frontend
+    app: frontend-app

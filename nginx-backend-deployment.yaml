@@ -1,16 +1,16 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: backend
+  name: backend-app
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: backend
+        app: backend-app
     spec:
       containers:
-      - name: backend
+      - name: backend-app
         image: meirkr/signal_r_chat_server:latest
         ports:
         - containerPort: 80
