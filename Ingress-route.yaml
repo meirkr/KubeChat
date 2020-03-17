@@ -9,8 +9,8 @@ spec:
       paths:
       - path: /chat
         backend:
-          serviceName: backend-svc
+          serviceName: bapp-svc
           servicePort: 80
       - backend:
-          serviceName: frontend-svc
+          serviceName: fapp-svc
           servicePort: 80
