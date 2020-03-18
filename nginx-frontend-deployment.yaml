@@ -1,16 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fapp
+  name: frontend-deployment
+  labels:
+    app: frontend
 spec:
-  replicas: 1
+  replicas: 3
+  selector:
+    matchLabels:
+      app: frontend
   template:
     metadata:
       labels:
-        app: fapp
+        app: frontend
     spec:
       containers:
-      - name: fapp
+      - name: frontend
         image: meirkr/blazor_chat:latest
         ports:
         - containerPort: 80
