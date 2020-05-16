@@ -8,9 +8,9 @@ spec:
       paths:
       - path: /
         backend:
-          serviceName: service-frontend-80
+          serviceName: service-frontend
           servicePort: 80
       - path: /chat
         backend:
-          serviceName: service-backend-80
+          serviceName: service-backend
           servicePort: 80
