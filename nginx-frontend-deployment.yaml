@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: meirkr/blazor_chat:latest
+        image: meirkr/blazor_chat:release:0.2
         ports:
         - containerPort: 80
