@@ -4,7 +4,7 @@ metadata:
   name: ingress-chat
 spec:
   rules:
-  - host: chat.meirkr.com
+  - host: chat.meirweb.com
     http:
       paths:
       - path: /
